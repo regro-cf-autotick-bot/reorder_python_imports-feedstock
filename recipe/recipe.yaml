@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: 3.16.0
+  version: "3.19.0"
 
 package:
   name: reorder_python_imports
@@ -9,10 +9,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/r/reorder_python_imports/reorder_python_imports-${{ version }}.tar.gz
-  sha256: bcc4e5e467a8833ec187e35f84f1a3e442881b3c62c265ece87677100473db43
+  sha256: 457e65fc0adb50d724b633cae2825e484c119dc381f01353c4fe7693216451c0
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   python:
